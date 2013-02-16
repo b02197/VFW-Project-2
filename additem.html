@@ -9,33 +9,21 @@
             <meta name="description" content="This is a web app for making a burger order" />
             <meta name="robots" content="index, follow" />
             <meta name="viewport" content="user-scalable=no, width=device-width" />
+            <link href="css/styles.css" rel="stylesheet" />
             <title>Burger Maker</title>
         </head>
         <body>
-            <h1>Place a Burger order</h1>
-            <form action="" method="post" >
-                <fieldset>                       
+            <h1 id="burger">Place a Burger order</h1>
+            <form action="#" method="post" id="burgerMaker">
+                <fieldset id="makeBurger>                       
                     <legend>Make a burger</legend>
-                    <ul>
+                    <ul id="data">
                         <li><label for="sName">Server Name:</label><input type="text" id="sName" /></li>
                         <li><label for="tNum">Table Number:</label><input type="text" id="tNum" /></li>
                         <li><label for="tDate">Today's Date:</label><input type="date" id="tDate"/></li>
                         <li><label for="cheese">Do you want cheese? Yes or No</label><input type="range" name="cheese" min="1" max="2" id="cheese"/></li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <label for="temp">What temp would you like your burger?</label>
-                            <select id="temp">
-                                <option value="Rare">Rare</option>
-                                <option value="Med-Rare">Med-Rare</option>
-                                <option value="Medium">Medium</option>
-                                <option value="Med-Well">Med-Well</option>
-                                <option value="Well">Well</option>
-                            </select>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>What condiments?
+                        <li id="select"><label for="temperature">What temperature would you like your burger?</label></li>
+                        <li><label for ="cond">What condiments?</label>
                             <ul>
                                 <li><input type="checkbox" value="Ketchup" id="ketch" /><label for="ketch">Ketchup</label></li>
                                 <li><input type="checkbox" value="Mustard" id="must" /><label for="must">Mustard</label></li>
@@ -45,11 +33,9 @@
                                 <li><input type="checkbox" value="Lettuce" id="lett" /><label for="lett">Lettuce</label></li>
                                 <li><input type="checkbox" value="Tomatoe" id="toma" /><label for="toma">Tomatoe</label></li>
                             </ul>
-                    </ul>
                         </li>
-                    <ul>
                         <li><label for="more">Special requests:</label><textarea id="more"></textarea></li>
-                        <li>Side dish?
+                        <li><label for= "side">Side dish?</label>
                             <ul>
                                 <li><input type="radio" checked value="No Side" id="noSide" name="side" /><label for="noSide">No Side</label></li>
                                 <li><input type="radio"  value="Fries" id="fries" name="side" /><label for="fries">Fries</label></li>
@@ -59,12 +45,13 @@
                         </li>
                     </ul>
                 </fieldset>
-                <input type="submit" value="Send Order" /> <!-- Submit button for form -->
+                <input type="button" value="Send Order" id="submit"/> <!-- Submit button for form -->
                 <input type="hidden" value="true"/>   <!-- hidden button -->
                 <p>
-                <a href="#">Clear stored data</a> <!-- Clear data link -->
-                <a href="#">Display data</a>  <!-- Display data link-->
+                <a href="#" id="clear">Clear stored data</a> <!-- Clear data link -->
+                <a href="#" id="displayData">Display data</a>  <!-- Display data link-->
                 </p>
             </form>
+            <script src="js/main.js" type="text/javascript"></script>
         </body>
     </html>

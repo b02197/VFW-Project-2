@@ -1,0 +1,41 @@
+/*
+Micahel Eaton
+Project 2
+term 1302
+*/
+
+
+body{
+    background-color:#4d2a0c;
+    }
+
+fieldset{
+    background-color:#dfb466;
+    border-color: red;
+}
+h1 {
+    margin: 20px;
+    border: 1px solid black;
+    padding: 20px;
+    width: 43%;
+    background-color: #34652e;
+    font-family: Arial;
+    
+}
+
+
+legend{
+    font-size:24px;
+    font-family: Arial;
+    color:#fff;
+    
+}
+
+input{
+    font-size: 15px;
+}
+
+a{
+    color: #fff;
+    padding:10px;
+}
