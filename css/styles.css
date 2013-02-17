@@ -6,23 +6,26 @@ term 1302
 
 
 body{
-    background-color:#4d2a0c;
+    background-color:#34652e;
     }
 
 fieldset{
-    background-color:#dfb466;
+    background-color:#4d2a0c;
     border-color: red;
 }
+
+a{
+    padding:10px;
+}   
 h1 {
     margin: 20px;
     border: 1px solid black;
     padding: 20px;
-    width: 43%;
-    background-color: #34652e;
+    width: 325px;
+    background-color: #dfb466;
     font-family: Arial;
     
 }
-
 
 legend{
     font-size:24px;
@@ -34,7 +37,11 @@ input{
     font-size: 15px;
 }
 
-a{
-    color: #fff;
-    padding:10px;
+ul{
+    color:#fff
+}
+
+
+div{
+    color:#fff;
 }
