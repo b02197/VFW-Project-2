@@ -88,6 +88,10 @@ function togCont(n){
 }
 //function to display data to browser
    function getData(){
+       togCont("on");
+      if(localStorage.length === 0){
+         alert("There is no data found in the local storage.");
+      }
       var makeDiv = document.createElement('Div');
       makeDiv.setAttribute("id", "item");
       var makeList = document.createElement('ul');
@@ -113,7 +117,12 @@ function togCont(n){
       }
     
    }
-   
+//function for clearing data
+   function clearData(){
+      localStorage.clear();
+      alert("You have deleted the order.");
+      window.location.reload();
+}
 //Array for my temperature drop down
     var meatTemp = ["--Choose A Temp--", "Rare", "Med-Rare", "Medium", "Med-Well", "Well"],
          sideValue,
