@@ -14,17 +14,17 @@ window.addEventListener("DOMContentLoaded", function(){
 //Create select field element and populate with options
     function makeDrop(){
         var formtag = document.getElementsByTagName("form"),
-            selectLi = $('dropDown'),
-            makeSelect = document.createElement('select');
-            makeSelect.setAttribute("id", "temps");
+            selLi = $('dropDown'),
+            createSelect = document.createElement('select');
+            createSelect.setAttribute("id", "temps");
         for(var i=0, j=meatTemp.length; i<j; i++){
-            var makeOption = document.createElement('option');
+            var createOption = document.createElement('option');
             var optText = meatTemp[i];
-            makeOption.setAttribute("value", optText);
-            makeOption.innerHTML = optText;
-            makeSelect.appendChild(makeOption);
+            createOption.setAttribute("value", optText);
+            createOption.innerHTML = optText;
+            createSelect.appendChild(createOption);
         }
-        selectLi.appendChild(makeSelect);
+        selLi.appendChild(createSelect);
     }
     
 //Find the value of a selected radio button
@@ -92,26 +92,26 @@ function togCont(n){
       if(localStorage.length === 0){
          alert("There is no data found in the local storage.");
       }
-      var makeDiv = document.createElement('Div');
-      makeDiv.setAttribute("id", "item");
-      var makeList = document.createElement('ul');
-      makeDiv.appendChild(makeList);
-      document.body.appendChild(makeDiv);
+      var createDiv = document.createElement('Div');
+      createDiv.setAttribute("id", "item");
+      var createList = document.createElement('ul');
+      createDiv.appendChild(createList);
+      document.body.appendChild(createDiv);
       $('item').style.display = "block";
       for(var i=0, j=localStorage.length; i<j; i++){
-         var makeli = document.createElement('li');
-         makeList.appendChild(makeli);
+         var createli = document.createElement('li');
+         createList.appendChild(createli);
          var key = localStorage.key(i);
          var value = localStorage.getItem(key);
 //convert string back to object
          var infoObj = JSON.parse(value);
-         var makeSubList = document.createElement('ul');
-         makeli.appendChild(makeSubList);
+         var createSubList = document.createElement('ul');
+         createli.appendChild(createSubList);
          for(var y in infoObj){
-            var makeSubli = document.createElement('li');
-            makeSubList.appendChild(makeSubli);
+            var createSubli = document.createElement('li');
+            createSubList.appendChild(createSubli);
             var optSubText = infoObj[y] [0] +" "+ infoObj[y] [1];
-            makeSubli.innerHTML = optSubText
+            createSubli.innerHTML = optSubText
          }
          
       }
