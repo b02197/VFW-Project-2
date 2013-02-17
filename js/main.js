@@ -88,7 +88,7 @@ function togCont(n){
 }
 //function to display data to browser
    function getData(){
-       togCont("on");
+      togCont("on");
       if(localStorage.length === 0){
          alert("There is no data found in the local storage.");
       }

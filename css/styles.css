@@ -12,18 +12,30 @@ body{
 fieldset{
     background-color:#4d2a0c;
     border-color: red;
+    max-width: 330px;
+    margin:10px;
+    padding: 10px;
+    text-align: left;
+    max-height: 350px;
+    
 }
 
 a{
-    padding:10px;
-}   
-h1 {
-    margin: 20px;
+    margin: 10px;
     border: 1px solid black;
-    padding: 20px;
-    width: 325px;
+    background-color: #dfb466;
+    padding:3px;
+    text-align: center;
+    
+}   
+h1{
+    margin: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    width: 330px;
     background-color: #dfb466;
     font-family: Arial;
+    text-align: center;
     
 }
 
@@ -34,14 +46,18 @@ legend{
     
 }
 input{
+    font-family: arial;
     font-size: 15px;
 }
 
 ul{
-    color:#fff
+    font-family: arial;
+    color:#fff;
 }
 
 
 div{
+    font-family: arial;
+    font-size: 18px;
     color:#fff;
 }
